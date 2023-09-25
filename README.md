@@ -4,6 +4,10 @@ This repository contains a simple and dynamic typewriter effect inspired by Open
 
 ![Typewriter-ChatGPT-demo.gif](img%2FTypewriter-ChatGPT-demo.gif)
 
+## Demo
+A live demo of the effect can be seen:
+https://createit-dev.github.io/315-chatgpt-typewriter-js/
+
 ## Features
 
 - Pure JavaScript - no external libraries required (apart from the optional Bootstrap for styling).
