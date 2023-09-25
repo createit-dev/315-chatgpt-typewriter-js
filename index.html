@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Typing Like ChatGPT: A Simple JavaScript Typewriter Effect Tutorial</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/2.21.0/core.min.js" integrity="sha512-fo6X5UXaTRf/mHuTYJBR3Q/rpPa+LB2KUyDMROluMkZnfEEF4DhQyI5AHRoAe/zzu1Ty58MMmZXG4SuVEpXsng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./chatgpt-typewriter-js.js"></script>
+
+    <script>
+        window.onload = function() {
+
+            // For tables
+            const tables = document.querySelectorAll('#typewriter-gpt-1 table');
+            tables.forEach(table => {
+                const cells = Array.from(table.querySelectorAll('th, td'));
+                if (cells.length) {
+                    typeTableContent(cells);
+                }
+            });
+
+            // For normal text elements
+            const textElements = Array.from(document.querySelectorAll('#typewriter-gpt-2 p, #typewriter-gpt-2 span, #typewriter-gpt-2 h1'));
+            if (textElements.length) {
+                typeTableContent(textElements);
+            }
+        }
+    </script>
+
+    <link href="./custom.css" rel="stylesheet">
+
+</head>
+
+<body class="text-center">
+
+<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+    <main role="main" class="inner cover my-5">
+
+
+        <div id="typewriter-gpt-2">
+            <h1 class="cover-heading h3">Typing Like ChatGPT: A Simple JavaScript Typewriter Effect Tutorial</h1>
+            <p>Revive 1909 Year in History using ChatGPT's Typing Animation in <span>pure Javascript</span></p>
+        </div>
+
+        <div class="mt-5"></div>
+
+        <div id="typewriter-gpt-1">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Event</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>January 16</td>
+                    <td>Ernest Shackleton's expedition finds the magnetic South Pole.</td>
+                </tr>
+                <tr>
+                    <td>January 24</td>
+                    <td>The Japan Association of Football emerges. Its 1st President was Shimazu Kozaburo.</td>
+                </tr>
+                <tr>
+                    <td>March 3</td>
+                    <td>The President of U.S. William Howard Taft signs a bill creating the United States Postal Savings System.</td>
+                </tr>
+                <tr>
+                    <td>March 4</td>
+                    <td>William Howard Taft is inaugurated as the 27th President of the United States.</td>
+                </tr>
+                <tr>
+                    <td>March 20</td>
+                    <td>The first Kiel Week sailing event is held in Germany.</td>
+                </tr>
+                <tr>
+                    <td>April 6</td>
+                    <td>Robert Peary, American explorer claims to have reached the North Pole.</td>
+                </tr>
+                <tr>
+                    <td>April 19</td>
+                    <td>Joan of Arc is beatified in Rome.</td>
+                </tr>
+                <tr>
+                    <td>June 25</td>
+                    <td>The Science Museum in London comes into existence.</td>
+                </tr>
+                <tr>
+                    <td>July 25</td>
+                    <td>Louis Bleriot is the first man to fly across the English Channel.</td>
+                </tr>
+                <tr>
+                    <td>September 2</td>
+                    <td>The first flight over the Swiss Alps by Count de Lambert.</td>
+                </tr>
+                <tr>
+                    <td>September 15</td>
+                    <td>The first reported use of a coin-operated telephone.</td>
+                </tr>
+                <tr>
+                    <td>October 26</td>
+                    <td>The judicial system of Uruguay is established.</td>
+                </tr>
+                <tr>
+                    <td>December 1</td>
+                    <td>The first gray wolves are relocated to Michigan.</td>
+                </tr>
+                <tr>
+                    <td>December 23</td>
+                    <td>Electrical engineer, Albert Kahn, stands with workers in Detroit to break ground for the gigantic Packard Motor Car Company.</td>
+                </tr>
+                </tbody>
+            </table>
+
+
+        </div>
+    </main>
+
+    <footer class="mastfoot mt-auto">
+        <div class="inner">
+            <p>GitHub repository: <a href="https://github.com/createit-dev/315-chatgpt-typewriter-js" target="_blank">chatgpt-typewriter-js</a></p>
+        </div>
+    </footer>
+</div>
+
+
+</body>
+</html>
