@@ -75,4 +75,4 @@ The following is an example of how the script can be implemented:
 
 To adjust the typing speed, modify the `typingSpeed` constant in the script.
 
-
+Read more on our site https://www.createit.com/blog/typing-like-chatgpt-a-simple-javascript-typewriter-effect-tutorial/
